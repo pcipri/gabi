@@ -1,0 +1,269 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+} 
+/*general styles*/
+
+* {
+  box-sizing: border-box;
+}
+
+/*Header styles*/
+header {
+  background-color: rgba(41,60,82,.8);
+  width: 100%;
+  height: 11.3375rem;
+  position: fixed;
+  color: aliceblue;
+  font-family: Kurale, 'Times New Roman', 'Open Sans', Arial, Calibri;
+  z-index: 2;
+}
+.profile {
+  margin: 0.5rem 1.5rem 0.5rem;
+  vertical-align: super;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  width: 20%;
+  height: 8.6875rem;
+  position: fixed;
+  float: left;
+  top: 0;
+  left: 0;
+  clear: right;
+  white-space: nowrap;
+}
+.profile::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+#profile_photo{
+  border-radius: 45%;
+  border: 2px solid aliceblue;
+  height: 7.3125rem;
+  width: 7.625rem;
+  object-fit: cover;
+}
+#description {
+  width: 70%;
+  height: 8.6875rem;
+  margin: 0.5rem 0 0.5rem;
+  position: fixed;
+  float: left;
+  top: 0;
+  left: 15.98rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+#description::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 3.34rem 0 3.34rem;
+  text-overflow: clip;
+  white-space: normal;
+}
+#media_contact {
+  position: fixed;
+  float: left;
+  top: 0;
+  left: calc(92%);
+  width: 8%;
+  height: 8.6875rem;
+  list-style-type: none;
+}
+#media_contact::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+i {
+  color: red;
+  align-items: center; 
+  resize: both;
+  padding: 0.5rem 1.5rem 0.5rem;
+}
+i:hover {
+  color: aliceblue;
+  transition: color 5s;
+}
+
+ nav {
+  width: 100%;
+  height: 2.15rem;
+  position: fixed;
+  float: left;
+  left: 0;
+  top: 8.6875rem;
+  font-family: Karla, 'Times New Roman', 'Open Sans', Arial, Calibri;
+  margin: 0.5rem 0.5rem 0.4rem;
+  border-top: 2px solid aliceblue;
+  padding: 0.3rem 0 0.45rem;
+   
+}
+nav a {
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid aliceblue;
+  width: 19.5%;
+  background-color: rgba(41,60,82,.1);
+  color: aliceblue;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  letter-spacing: 0.05rem;
+  padding: 0.25rem 0 0.25rem;
+  white-space: nowrap;
+}
+nav::after {
+  content: "";
+  clear: left;
+  display: block;
+}
+#online_button {
+  color: red;
+}
+#online_button:hover {
+  color: aliceblue;
+  transition: color 5s;
+}
+main {
+  position: relative;
+  z-index: 1;
+  width: 99vw;
+  top: 32.5vh;
+  background-color: aliceblue;
+}
+.partener {
+  color: rgba(41,60,82,.8);
+  position: absolute;
+  left: 3.5vw;
+  top: 3.5vh;
+  font-size: 1.25 rem;
+  text-align: center;
+  width: 40%;
+  font-weight: bold;
+  margin: 1.5rem 1rem 0.5rem;
+  padding: 1.5rem 0.5rem 0.5rem;
+  font-family: Kurale, 'Times New Roman', 'Open Sans', Arial, Calibri;
+  letter-spacing: 0.1rem;
+}
+#partener_photo {
+  width: 10.94rem;
+  height: 9rem;
+  border-radius: 5%;  
+  object-fit: contain;
+}
+#detalii_partener {
+  display: inline-block;
+  font-style: oblique;
+  color: red;
+  margin-top: 0.5rem;
+}
+#detalii_partener_art {
+  text-align: justify;
+  font-weight: lighter;
+  margin-top: 0.5rem;
+  display:none;
+  font-family: Karla, 'Times New Roman', 'Open Sans', Arial, Calibri;
+  font-size: 0.875rem;
+}
+#detalii_partener:hover {
+  color: rgba(41,60,82,.8);
+}
+#detalii_partener:hover + #detalii_partener_art {
+  display: block;
+}
+.customer{
+  color: rgba(41,60,82,.8);
+  position: absolute;
+  right: 3.5vw;
+  top: 3.5vh;
+  font-size: 1.25 rem;
+  text-align: center;
+  width: 40%;
+  font-weight: bold;
+  margin: 1.5rem 1rem 0.5rem;
+  padding: 1.5rem 0.5rem 0.5rem;
+  font-family: Kurale, 'Times New Roman', 'Open Sans', Arial, Calibri;
+  letter-spacing: 0.1rem; 
+}
+#customer_experience_photo {
+  width: 10.94rem;
+  height: 9rem;
+  object-fit: cover;
+  border-radius: 5%;
+}
+#customer_experience {
+  display: inline-block;
+  font-style: oblique;
+  color: red;
+  margin-top: 0.5rem;
+}
+#customer_experience_art {
+  text-align: justify;
+  font-weight: lighter;
+  margin-top: 0.5rem;
+  display: none;
+  font-family: Karla, 'Times New Roman', 'Open Sans', Arial, Calibri;
+  font-size: 0.875rem;
+  }
+#customer_experience:hover {
+  color: rgba(41,60,82,.8);
+}
+#customer_experience:hover + #customer_experience_art {
+  display: block;
+}
